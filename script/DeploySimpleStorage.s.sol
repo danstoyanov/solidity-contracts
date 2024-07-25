@@ -10,4 +10,10 @@ contract DeploySimpleStorage is Script {
         SimpleStorage simpleStorage = new SimpleStorage();
         vm.stopBroadcast();
     }
+
+    function test() {
+        vm.startBroadcast();
+        // just to test that the broadcast works.
+        vm.stopBroadcast();
+    }
 }
